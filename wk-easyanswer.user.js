@@ -2,8 +2,10 @@
 // @name WK easy answer
 // @author galymzhan
 // @version 0.0.1
-// @description Let you fill in answers by clicking instead of typing
+// @description Lets you fill in answers by clicking instead of typing
 // @include http://www.wanikani.com/review/session*
+// @downloadURL https://userscripts.org/scripts/source/184992.user.js
+// @updateURL https://userscripts.org/scripts/source/184992.meta.js
 // @grant none
 // ==/UserScript==
 
