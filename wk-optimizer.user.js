@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name WK optimizer
 // @author galymzhan
-// @version 0.0.1
+// @version 0.0.2
 // @description Optimize your time on WK
 // @include http://www.wanikani.com/review/session*
 // @include http://www.wanikani.com/lesson/session*
@@ -68,10 +68,17 @@
   // So if item.srs == 4, that means item WILL be gurued if you get it right,
   // it doesn't mean it's gurued at the moment.
   function _isBlocker(item) {
+    // Vocabulary items are not blockers in any case
     if (item.voc) return false;
+
+    // Kanjis and radicals are always blockers when in lesson mode
     if (isLesson) return true;
+
     if (item.kan) return !!items[item.kan] && (item.srs < 5);
-    return !!items[item.meaning] && (item.srs < 5);
+
+    // At this point item must be a radical
+    var meaning = item.en[0].toLowerCase();
+    return !!items[meaning] && (item.srs < 5);
   }
 
   function subscribeToUpdates() {
