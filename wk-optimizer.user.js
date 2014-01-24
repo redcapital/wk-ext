@@ -5,6 +5,8 @@
 // @description Optimize your time on WK
 // @include http://www.wanikani.com/review/session*
 // @include http://www.wanikani.com/lesson/session*
+// @include https://www.wanikani.com/review/session*
+// @include https://www.wanikani.com/lesson/session*
 // @downloadURL https://userscripts.org/scripts/source/184990.user.js
 // @updateURL https://userscripts.org/scripts/source/184990.meta.js
 // @grant none

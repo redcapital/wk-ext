@@ -4,6 +4,7 @@
 // @version 0.0.1
 // @description Lets you fill in answers by clicking instead of typing
 // @include http://www.wanikani.com/review/session*
+// @include https://www.wanikani.com/review/session*
 // @downloadURL https://userscripts.org/scripts/source/184992.user.js
 // @updateURL https://userscripts.org/scripts/source/184992.meta.js
 // @grant none
