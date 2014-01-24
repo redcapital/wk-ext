@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name WK easy answer
 // @author galymzhan
-// @version 0.0.1
+// @version 0.0.2
 // @description Lets you fill in answers by clicking instead of typing
 // @include http://www.wanikani.com/review/session*
 // @include https://www.wanikani.com/review/session*

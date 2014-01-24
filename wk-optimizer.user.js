@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name WK optimizer
 // @author galymzhan
-// @version 0.0.2
+// @version 0.0.3
 // @description Optimize your time on WK
 // @include http://www.wanikani.com/review/session*
 // @include http://www.wanikani.com/lesson/session*
