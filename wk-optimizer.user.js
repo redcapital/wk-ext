@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name WK optimizer
 // @author galymzhan
-// @version 0.0.3
+// @version 0.0.4
 // @description Optimize your time on WK
 // @include http://www.wanikani.com/review/session*
 // @include http://www.wanikani.com/lesson/session*
@@ -45,7 +45,7 @@
 
   function retrieveItems(level, onItemsLoaded) {
     function loadItems(type, slugKey, callback) {
-      var url = 'http://www.wanikani.com/api/user/' + apiKey + '/' + type + '/' + level + '?callback=?';
+      var url = '/api/user/' + apiKey + '/' + type + '/' + level + '?callback=?';
       $.getJSON(url, function(data) {
         if (data.requested_information) {
           for (var i = 0; i < data.requested_information.length; i++) {
