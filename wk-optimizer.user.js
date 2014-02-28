@@ -79,7 +79,7 @@
     if (item.kan) return !!items[item.kan] && (item.srs < 5);
 
     // At this point item must be a radical
-    var meaning = item.en[0].toLowerCase();
+    var meaning = item.en[0].toLowerCase().replace(/ /g, '-');
     return !!items[meaning] && (item.srs < 5);
   }
 
